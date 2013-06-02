@@ -1,4 +1,4 @@
-/// <reference path="../../definitions/ExtJS-4.2.0-Typed.d.ts" />
+/// <reference path="../../definitions/ExtJS.d.ts" />
 
 Ext.define("DeftTypeScript.view.Viewport", <Ext.container.IViewport>{
     extend: "Ext.container.Viewport",

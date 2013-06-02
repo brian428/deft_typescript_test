@@ -82,3 +82,4 @@ Ext.define("DeftTypeScript.config.AppConfig", {
         }
     }
 });
+//@ sourceMappingURL=AppConfig.js.map

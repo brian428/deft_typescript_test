@@ -1,4 +1,4 @@
-/// <reference path="ExtJS-4.2.0-Typed.d.ts" />
+/// <reference path="ExtJS.d.ts" />
 
 declare module Deft.mvc {
 
@@ -12,8 +12,8 @@ declare module Deft.mvc {
         init(): void;
     }    
 
-    export interface IViewController extends Deft.mixin.Injectable {
-        config?: Object;
+    export interface IViewController extends Deft.mixin.Injectable,Ext.IBase {
+        control?: Object;
         observe?: Object;
         init?(): void;
         view?: any;
@@ -21,8 +21,8 @@ declare module Deft.mvc {
         inject?: any;
     }
 
-    export class ViewController implements Deft.mixin.Injectable {
-        config: Object;
+    export class ViewController implements Deft.mixin.Injectable,Ext.IBase {
+        control: Object;
         observe: Object;
         init(): void;
         view: any;
@@ -45,11 +45,11 @@ declare module Deft.ioc {
 
 declare module Deft.mixin {
 
-    export interface Controllable extends Ext.IBase {
+    export interface Controllable {
         controller: Deft.mvc.ViewController;
     }
 
-    export interface Injectable extends Ext.IBase {
+    export interface Injectable {
         inject: any;
     }
 }
@@ -62,7 +62,7 @@ declare module Deft.promise {
         static pipeline(fns: any, scope: Object, initialValue: any): Deft.promise.Promise;
     }
 
-    export class Deferred extends Ext.Base {
+    export class Deferred {
         static enableLogging: bool;
         constructor(config?: any);
         then(callbacks: any): Deft.promise.Promise;
@@ -76,7 +76,7 @@ declare module Deft.promise {
         getState(): string;
     }
 
-    export class Promise extends Ext.Base {
+    export class Promise {
         constructor(config?: any);
         static when(promiseOrValues: any): Deft.promise.Promise;
         static all(promiseOrValues: any): Deft.promise.Promise;

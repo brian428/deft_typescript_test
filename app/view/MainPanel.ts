@@ -1,4 +1,4 @@
-/// <reference path="../../definitions/ExtJS-4.2.0-Typed.d.ts" />
+/// <reference path="../../definitions/ExtJS.d.ts" />
 /// <reference path="../../definitions/DeftJS.d.ts" />
 
 /**
@@ -6,7 +6,7 @@
 */
 Ext.define("DeftTypeScript.view.MainPanel", <Ext.panel.IPanel>{
     extend: "Ext.panel.Panel",
-    alias: "widget.deftTypeScript-view-mainPanel",
+    alias: [ "widget.deftTypeScript-view-mainPanel" ],
     controller: "DeftTypeScript.controller.MainPanelController",
 
     header: true,

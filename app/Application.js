@@ -49,3 +49,4 @@ Ext.define("DeftTypeScript.Application", {
         return Ext.create("DeftTypeScript.view.Viewport");
     }
 });
+//@ sourceMappingURL=Application.js.map

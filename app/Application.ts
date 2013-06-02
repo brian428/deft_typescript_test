@@ -1,4 +1,4 @@
-/// <reference path="../definitions/ExtJS-4.2.0-Typed.d.ts" />
+/// <reference path="../definitions/ExtJS.d.ts" />
 /// <reference path="../definitions/DeftJS.d.ts" />
 /// <reference path="./config/AppConfig.ts" />
 
